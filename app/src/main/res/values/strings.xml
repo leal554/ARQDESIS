@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">Arqdesis</string>
+    <string name="app_name">Compra de Passagem</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="edit_login">Digite o Voo</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_main">Atividade Principal</string>
+    <string name="button_send">Buscar</string>
+    <string name="title_activity_display_message">Mostrar a Mensagem</string>
+
+    <string name="hello_world">hello</string>
+
 </resources>
