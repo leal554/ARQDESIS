@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 public class MainActivity extends Activity {
 
@@ -44,8 +45,10 @@ public class MainActivity extends Activity {
     public void sendMessage(View view)
     {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText)findViewById(R.id.edit_voo);
-        String message = "Voo não encontrado";
+        Spinner countries = (Spinner) findViewById(R.id.dropdown);
+        String s = countries.getSelectedItem().toString();
+        Voo v = new Voo();
+        String message = v.BuscaVoo(s);
         intent.putExtra(EXTRA_MESSAGE,message);
         startActivity(intent);
     }

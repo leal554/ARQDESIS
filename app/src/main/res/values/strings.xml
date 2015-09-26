@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Compra de Passagem</string>
+    <string name="app_name">Origem do Voo</string>
 
     <string name="edit_login">Digite o Voo</string>
     <string name="action_settings">Configurações</string>
@@ -8,5 +8,17 @@
     <string name="title_activity_display_message">Mostrar a Mensagem</string>
 
     <string name="hello_world">hello</string>
+
+    <string-array name="countries">
+        <item>Escolha seu país</item>
+        <item>Brasil</item>
+        <item>África do Sul</item>
+        <item>Alemanha</item>
+        <item>Argentina</item>
+        <item>Austrália</item>
+        <item>Canadá</item>
+        <item>Inglaterra</item>
+        <item>Japão</item>
+    </string-array>
 
 </resources>

@@ -4,12 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/edit_voo"
-        android:layout_width="0dp"
+    <Spinner
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/edit_login"
-        android:layout_weight="1"/>
+        android:entries="@array/countries"
+        android:id="@+id/dropdown"
+        android:hint="@string/button_send"
+        android:layout_weight="1"
+        />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,3 +20,4 @@
         android:onClick="sendMessage"/>
 
 </LinearLayout>
+
