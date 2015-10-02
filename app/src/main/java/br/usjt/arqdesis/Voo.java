@@ -59,7 +59,7 @@ public class Voo {
         Japao = new ArrayList<>();
     }
 
-    public String BuscaVoo(String pais)
+    public String BuscaVooS(String pais)
     {
         String voos = "Nenhum voo disponivel "+ pais;
 
@@ -132,5 +132,73 @@ public class Voo {
             }
         }
         return voos;
+    }
+
+    public ArrayList BuscaVooA(String pais)
+    {
+        ArrayList<String> avoos = new ArrayList<>();
+        avoos.add("Voo disponiveis saindo "+ pais+ ": \n");
+
+        if(pais.equals("Brasil"))
+        {
+            for (int i = 0; i < Brasil.size(); i++)
+            {
+                avoos.add(Brasil.get(i));
+            }
+        }
+
+        if(pais.equals("África do Sul"))
+        {
+            for (int i = 0; i < AfricaDoSul.size(); i++)
+            {
+                avoos.add(AfricaDoSul.get(i));
+            }
+        }
+
+        if(pais.equals("Alemanha"))
+        {
+            for (int i = 0; i < Alemanha.size(); i++)
+            {
+                avoos.add(Alemanha.get(i));
+            }
+        }
+
+        if(pais.equals("Argentina"))
+        {
+            for (int i = 0; i < Argentina.size(); i++)
+            {
+                avoos.add(Argentina.get(i));
+            }
+        }
+
+        if(pais.equals("Austrália"))
+        {
+            for (int i = 0; i < Australia.size(); i++)
+            {
+                avoos.add(Australia.get(i));
+            }
+        }
+
+        if(pais.equals("Inglaterra"))
+        {
+            for (int i = 0; i < Inglaterra.size(); i++)
+            {
+                avoos.add(Inglaterra.get(i));
+            }
+        }
+
+        if(pais.equals("Japão"))
+        {
+            for (int i = 0; i < Japao.size(); i++)
+            {
+                avoos.add(Japao.get(i));
+            }
+        }
+        else
+        {
+            String voos = "Nenhum voo disponivel "+ pais;
+            avoos.add(voos);
+        }
+        return avoos;
     }
 }

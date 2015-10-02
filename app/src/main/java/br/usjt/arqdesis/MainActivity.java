@@ -3,11 +3,9 @@ package br.usjt.arqdesis;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Spinner;
 
 public class MainActivity extends Activity {
@@ -46,9 +44,9 @@ public class MainActivity extends Activity {
     {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         Spinner countries = (Spinner) findViewById(R.id.dropdown);
-        String s = countries.getSelectedItem().toString();
+        String pais = countries.getSelectedItem().toString();
         Voo v = new Voo();
-        String message = v.BuscaVoo(s);
+        String message = v.BuscaVooS(pais);
         intent.putExtra(EXTRA_MESSAGE,message);
         startActivity(intent);
     }
